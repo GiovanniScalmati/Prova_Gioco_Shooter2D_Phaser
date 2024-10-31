@@ -1,0 +1,15 @@
+import { Game, Scale } from"phaser";
+import { Level } from "./src/Level";
+
+new Game({
+    width: 640,
+    height: 360,
+    scene: Level,
+    physics: {
+        default:'arcade'},
+    scale: {
+        autoCenter: Scale.CENTER_BOTH,
+        mode: Scale.FIT
+    },
+    pixelArt:true
+})
